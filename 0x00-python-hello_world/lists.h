@@ -5,17 +5,16 @@
 
 /**
  * struct listint_s - singly linked list
- * @n: integer value stored in the node
- * @next: points to the next node in the list
+ * @n: integer
+ * @next: points to the next node
  *
- * Description: A structure representing a node in a singly linked list.
- *              It contains an integer value 'n' and a pointer 'next' that
- *              points to the next node in the list.
+ * Description: singly linked list node structure
+ * for Holberton project
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
